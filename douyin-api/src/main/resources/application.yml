@@ -1,0 +1,17 @@
+server:
+  port: 8866
+  tomcat:
+    uri-encoding: utf-8
+    max-swallow-size: -1 #tomcat默认大小为2M,超过2M的文件不会被捕获,需要调整次数大小为最大的100M或-1即可
+
+spring:
+
+  # banner: 自定义项目启动时的输出logo
+  banner:
+      # 修改后的logo所处位置
+      location: classpath:banner/banner.txt
+  servlet:
+      multipart:
+        max-file-size: 2MB # 文件上传大小限制,设置最大值,不能超过2MB
+#        max-file-size: 500KB
+        max-request-size: 2MB # 文件最大请求限制,用于批量上传

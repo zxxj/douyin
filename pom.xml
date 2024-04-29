@@ -10,6 +10,13 @@
 
     <!--  设置为pom,表示此pom.xml为总工程,用于管理  -->
     <packaging>pom</packaging>
+    <modules>
+        <module>douyin-common</module>
+        <module>douyin-model</module>
+        <module>douyin-mapper</module>
+        <module>douyin-service</module>
+        <module>douyin-api</module>
+    </modules>
 
     <!--  springboot  -->
     <parent>
